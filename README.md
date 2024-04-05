@@ -1,1 +1,10 @@
 # Smart-Attendance-system
+![Screenshot 2024-04-05 151816](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/7793713d-8af9-45a5-8888-30598c8ee534)
+![Screenshot 2024-04-05 151744](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/41cf7da1-499f-48dc-8d68-06e13685f621)
+![Screenshot 2024-04-05 151730](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/78f12393-a8e8-48da-b62e-c5f15803d908)
+![Screenshot 2024-04-05 151709](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/8d512e4b-7094-4e9f-a45c-453ea068db91)
+![Screenshot 2024-04-05 151630](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/49cc643e-edbc-4a5a-84e6-a1f34f4a46d3)
+![Screenshot 2024-04-05 151611](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/457341b0-099d-4d26-99ed-6ce4a7c0d273)
+![Screenshot 2024-04-05 150936](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/d3484acc-4d80-4088-89a4-9705b1fcdeae)
+![Screenshot 2024-04-05 150918](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/bc6f8492-713c-4c14-8182-0d6db69ad6af)
+![Screenshot 2024-04-05 150837](https://github.com/mohitfagoria/Smart-Attendance-system/assets/139565187/07afe266-ec24-42db-83af-2d257a2412f7)
