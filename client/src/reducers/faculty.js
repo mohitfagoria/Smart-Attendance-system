@@ -27,7 +27,7 @@ const initialState = {
   error: {},
 };
 
-export default function (state = initialState, action) {
+export default function a(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
@@ -86,7 +86,7 @@ export default function (state = initialState, action) {
     case UPDATE:
       return {
         ...state,
-        attendance: state.attendance.map((record) =>
+        courses: state.courses.map((record) =>
           record.id === payload.id ? payload : record
         ),
         loading: false,
@@ -101,7 +101,7 @@ export default function (state = initialState, action) {
         loading: false,
       };
 
-    case UPDATE:
+    case UNARCHIVE:
       return {
         ...state,
         courses: state.courses.map((record) =>
@@ -113,7 +113,7 @@ export default function (state = initialState, action) {
     case ADD_COMMENT:
       return {
         ...state,
-        comment: [payload, ...state.comments],
+        comments: [payload, ...state.comments],
         loading: false,
       };
 

@@ -16,7 +16,7 @@ const initialState = {
   user: localStorage.getItem("user"),
 };
 
-export default function (state = initialState, action) {
+export default function a(state = initialState, action) {
   const { type, payload } = action;
   console.log(type);
   switch (type) {
