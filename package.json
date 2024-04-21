@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pulkit007/Online-Attendance-System.git"
+    "url": "git+https://github.com/mohitfagoria/Online-Attendance-System.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pulkit007/Online-Attendance-System/issues"
+    "url": "https://github.com/mohitfagoria/Online-Attendance-System/issues"
   },
-  "homepage": "https://github.com/Pulkit007/Online-Attendance-System#readme",
+  "homepage": "https://github.com/mohitfagoria/Online-Attendance-System#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
