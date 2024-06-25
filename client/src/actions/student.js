@@ -81,7 +81,7 @@ export const getAvg = (course) => async (dispatch) => {
 // Get comment my 
 export const getComments = (course, year) => async (dispatch) => {
   try {
-    const res = await axios.get(`/api/faculty/chat/${course}/${year}`);
+    const res = await axios.get(`/api/student/chat/${course}/${year}`);
 
     dispatch({
       type: GET_COMMENTS,
@@ -104,7 +104,7 @@ export const addComment = (formData, course, year) => async (dispatch) => {
   console.log("WORKS");
   try {
     const res = await axios.post(
-      `/api/faculty/chat/${course}/${year}`,
+      `/api/student/chat/${course}/${year}`,
       formData,
       config
     );

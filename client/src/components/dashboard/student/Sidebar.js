@@ -31,9 +31,16 @@ export const Sidebar = ({ auth: { user }, logout }) => {
         <Link to="/" style={{ color: "white", fontWeight: "500px" }}>
           {" "}
           <li className="sidenav__list-item" onClick={logout}>
+            <b>Chat Room</b>{" "}
+          </li>
+        </Link>
+        <Link to="/" style={{ color: "white", fontWeight: "500px" }}>
+          {" "}
+          <li className="sidenav__list-item" onClick={logout}>
             <b>Logout</b>{" "}
           </li>
         </Link>
+        
       </ul>
     </aside>
   );

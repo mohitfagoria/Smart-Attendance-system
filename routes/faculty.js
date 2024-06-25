@@ -328,15 +328,34 @@ router.post("/attendance/:year/:roll/:course", auth, (req, res) => {
           course: req.params.course,
         },
       }).then((course) => {
-        db.Attendance.create({
-          roll: req.params.roll,
-          course: req.params.course,
-          year: req.params.year,
-          name: student.name,
-          date: date,
-          status: status,
+        db.Attendance.findOne({
+          where: {
+            roll: req.params.roll,
+            course: req.params.course,
+            year: req.params.year,
+            date: date,
+          },
         })
-          .then((record) => res.json(record))
+          .then((record) => {
+            if (record) {
+              // If attendance record exists, update it
+              record.status = status;
+              record.save();
+              res.json(record);
+            } else {
+              // If attendance record doesn't exist, create a new one
+              db.Attendance.create({
+                roll: req.params.roll,
+                course: req.params.course,
+                year: req.params.year,
+                name: student.name,
+                date: date,
+                status: status,
+              })
+                .then((newRecord) => res.json(newRecord))
+                .catch((err) => console.log(err.message));
+            }
+          })
           .catch((err) => console.log(err.message));
       });
     })
@@ -346,6 +365,7 @@ router.post("/attendance/:year/:roll/:course", auth, (req, res) => {
       })
     );
 });
+
 
 // @route   GET api/faculty/attendance/:year/:roll
 // @desc    Get attendance of a student
@@ -426,3 +446,9 @@ router.post("/chat/:course/:year", auth, (req, res) => {
 });
 
 module.exports = router;
+
+// Code structure/quality
+// Raj Chopra
+// 1:44 PM
+// Unit Tests/Test Case
+// DOcumentatio
